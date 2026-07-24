@@ -1,0 +1,6 @@
+{
+  "name": "DR. COFFEE - Cafés Especiais para Eventos",
+  "description": "Landing page e experiência sensorial de café especial para eventos corporativos, feiras e festas com métodos artesanais e drinks autorais.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
