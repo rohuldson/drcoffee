@@ -21,9 +21,9 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenQuoteModal }) => {
 
   const navLinks = [
     { name: 'Home', href: '#hero' },
+    { name: 'Cardápio', href: '#cardapio' },
     { name: 'Sobre', href: '#essencia' },
     { name: 'Eventos', href: '#eventos' },
-    { name: 'Cases', href: '#cardapio' },
     { name: 'Galeria', href: '#galeria' },
     { name: 'Contato', href: '#depoimentos' },
   ];

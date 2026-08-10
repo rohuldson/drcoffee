@@ -33,7 +33,7 @@ export const HERO_VIDEO_OPTIONS = [
   {
     id: 'coffee_pour',
     title: 'Extracão Pour Over & Espresso',
-    url: 'https://assets.mixkit.co/videos/preview/mixkit-barista-pouring-coffee-into-a-cup-41071-large.mp4',
+    url: 'https://assets.mixkit.co/videos/810/810-720.mp4',
     poster: COFFEE_IMAGES.heroBgDefault
   },
   {
@@ -282,13 +282,13 @@ export const EVENT_CATEGORIES: EventCategory[] = [
 
 export const FOUNDERS: Founder[] = [
   {
-    id: 'lucas-gabriel',
-    name: 'Lucas Andrade & Gabriel Mendonça',
-    role: 'Fundadores & Master Baristas (Q-Graders Certificados)',
-    bio: 'Amigos desde a faculdade de gastronomia, Lucas e Gabriel compartilhavam o mesmo descontentamento: nos eventos mais sofisticados que frequentavam, o café servido era genérico e de baixa qualidade. Em 2014, decidiram unir suas especializações em Barismo Internacional e Gestão de Eventos para criar a DR. COFFEE.',
+    id: 'Ronald-Douglas',
+    name: 'Douglas Lima & Ronald Silva',
+    role: 'Fundadores & Master Baristas ',
+    bio: `Há seis anos, nos conhecemos trabalhando em diferentes empresas e eventos. Entre experiências, desafios e grandes produções, descobrimos que compartilhávamos mais do que a profissão: <strong> o mesmo olhar para excelência, cuidado e inovação.</strong>`,
     quote: 'Para nós, café não é um insumo de evento — é uma experiência sensorial capaz de conectar pessoas, despertar sorrisos e deixar uma lembrança afetiva duradoura.',
-    image: 'https://images.unsplash.com/photo-1521017432531-fbd92d768814?q=80&w=1200&auto=format&fit=crop',
-    specialties: ['Seleção Direta nas Fazendas', 'Design de Barismo Itinerante', 'Criação de Drinks Autorais', 'Curadoria de Microlotes']
+    image: '../src/images/founders.jpg',
+    specialties: ['Seleção dos melhores cafés', 'Atendimento Humanizado', 'Drinks Autorais', 'Café que gera conexão', 'Experiência sensorial completa', 'Amamos o que fazemos']
   }
 ];
 

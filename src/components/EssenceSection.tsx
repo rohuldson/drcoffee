@@ -4,7 +4,7 @@ import { COFFEE_IMAGES } from '../data/coffeeData';
 
 export const EssenceSection: React.FC = () => {
   return (
-    <section id="essencia" className="py-24 bg-[#faf7f2] relative overflow-hidden">
+    <section  className="py-24 bg-[#faf7f2] relative overflow-hidden">
       {/* Background ambient light */}
       <div className="absolute top-1/2 left-0 -translate-y-1/2 w-[500px] h-[500px] bg-[#8c5a2b]/5 rounded-full blur-[120px] pointer-events-none" />
 

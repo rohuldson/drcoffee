@@ -6,7 +6,7 @@ export const FoundersSection: React.FC = () => {
   const founder = FOUNDERS[0];
 
   return (
-    <section id="fundadores" className="py-24 bg-[#faf7f2] relative overflow-hidden border-t border-[#e2d5c3]">
+    <section id="essencia" className="py-24 bg-[#faf7f2] relative overflow-hidden border-t border-[#e2d5c3]">
       {/* Background glow */}
       <div className="absolute top-1/2 right-0 -translate-y-1/2 w-[500px] h-[500px] bg-[#8c5a2b]/5 rounded-full blur-[130px] pointer-events-none" />
 
@@ -24,7 +24,7 @@ export const FoundersSection: React.FC = () => {
           </h2>
 
           <p className="font-sans-body text-sm sm:text-base text-[#5c4a3a] font-normal leading-relaxed">
-            Uma amizade nascida nos balcões de gastronomia que se transformou em referência nacional no mercado de cafés especiais para eventos de alto padrão.
+             Conheça a história de Douglas e Ronald, fundadores da DR. COFFEE, que transformaram sua paixão pelo café em uma jornada de excelência e inovação.
           </p>
         </div>
 
@@ -70,13 +70,16 @@ export const FoundersSection: React.FC = () => {
                 "Nos recusamos a aceitar que eventos importantes servissem cafés genéricos."
               </h3>
 
+        <p
+  className="font-sans-body text-sm sm:text-base text-[#5c4a3a] font-normal leading-relaxed"
+  dangerouslySetInnerHTML={{ __html: founder.bio }}
+/>
               <p className="font-sans-body text-sm sm:text-base text-[#5c4a3a] font-normal leading-relaxed">
-                {founder.bio}
+                Foi dessa conexão que nasceu a DR. COFFEE. Unimos nossa experiência no universo dos eventos à nossa paixão pelo café para criar algo diferente: uma experiência que vai além da xícara, combinando <strong>qualidade, hospitalidade, apresentação e inovação</strong> em cada detalhe.
               </p>
-
               <p className="font-sans-body text-sm sm:text-base text-[#5c4a3a] font-normal leading-relaxed">
-                Cada grão servido pela DR. COFFEE passa pessoalmente pela avaliação sensorial de Lucas e Gabriel em microlotes de produtores parceiros do Cerrado Mineiro, Mantiqueira e Chapada Diamantina.
-              </p>
+                Hoje, seguimos com o mesmo propósito que nos uniu no início: <strong>o café em uma experiência memorável e fazer de cada evento algo verdadeiramente especial.
+              </strong> </p>
             </div>
 
             {/* Inspirational Quote Card */}
@@ -90,9 +93,9 @@ export const FoundersSection: React.FC = () => {
               <div className="flex items-center justify-between pt-3 border-t border-[#e2d5c3]">
                 <div className="flex items-center gap-2">
                   <Coffee className="w-4 h-4 text-[#8c5a2b]" />
-                  <span className="text-xs font-bold uppercase tracking-wider text-[#8c5a2b]">Lucas & Gabriel</span>
+                  <span className="text-xs font-bold uppercase tracking-wider text-[#8c5a2b]">Douglas & Ronald</span>
                 </div>
-                <span className="text-[11px] text-[#6b5847] italic font-serif font-medium">Q-Graders CQI Certified</span>
+                <span className="text-[11px] text-[#6b5847] italic font-serif font-medium">Certificamos Excelência</span>
               </div>
             </div>
 

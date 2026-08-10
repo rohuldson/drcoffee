@@ -19,7 +19,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenQuoteModal }) => {
           muted
           playsInline
           preload="metadata"
-          poster={COFFEE_IMAGES.heroBgDefault}
+          poster={HERO_VIDEO_OPTIONS.coffee_pour}
           className="w-full h-full object-cover scale-105 filter brightness-[0.45] contrast-105"
         >
           <source src={primaryVideo.url} type="video/mp4" />
