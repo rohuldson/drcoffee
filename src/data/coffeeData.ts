@@ -1,4 +1,5 @@
 import { Drink, EventCategory, GalleryItem, Founder, Testimonial } from '../types';
+import foundersImage from '../images/founders.jpg';
 
 export const COMPANY_INFO = {
   name: 'DR. COFFEE',
@@ -287,7 +288,7 @@ export const FOUNDERS: Founder[] = [
     role: 'Fundadores & Master Baristas ',
     bio: `Há seis anos, nos conhecemos trabalhando em diferentes empresas e eventos. Entre experiências, desafios e grandes produções, descobrimos que compartilhávamos mais do que a profissão: <strong> o mesmo olhar para excelência, cuidado e inovação.</strong>`,
     quote: 'Para nós, café não é um insumo de evento — é uma experiência sensorial capaz de conectar pessoas, despertar sorrisos e deixar uma lembrança afetiva duradoura.',
-    image: '../src/images/founders.jpg',
+    image: foundersImage,
     specialties: ['Seleção dos melhores cafés', 'Atendimento Humanizado', 'Drinks Autorais', 'Café que gera conexão', 'Experiência sensorial completa', 'Amamos o que fazemos']
   }
 ];
