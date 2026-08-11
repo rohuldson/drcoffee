@@ -30,8 +30,8 @@ export const EssenceSection: React.FC = () => {
                       <Coffee className="w-5 h-5" />
                     </div>
                     <div>
-                      <p className="text-xs font-bold uppercase tracking-wider text-[#2c1d11]">Métodos Artesanais de Extração</p>
-                      <p className="text-[11px] text-[#6b5847]">V60, Chemex, Aeropress & Espresso 93°C</p>
+                      <p className="text-xs font-bold uppercase tracking-wider text-[#2c1d11]">Atendimento de excelência</p>
+                      <p className="text-[11px] text-[#6b5847]">Respeito e profissionalismo em cada interação.</p>
                     </div>
                   </div>
                 </div>

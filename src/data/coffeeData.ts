@@ -1,5 +1,8 @@
 import { Drink, EventCategory, GalleryItem, Founder, Testimonial } from '../types';
 import foundersImage from '../images/founders.jpg';
+import capuccinoImage from '../images/capuccino.jpg';
+import barist001Image from '../images/barist001.png';
+import barist002Image from '../images/barist002.png';
 
 export const COMPANY_INFO = {
   name: 'DR. COFFEE',
@@ -12,15 +15,17 @@ export const COMPANY_INFO = {
   location: 'São Paulo, SP - Atendimento em todo o Brasil',
 };
 
+
+
 // Curated high resolution images for background, drinks, and gallery
 export const COFFEE_IMAGES = {
   heroBgDefault: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=2070&auto=format&fit=crop',
   heroBgSecondary: 'https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?q=80&w=2078&auto=format&fit=crop',
-  baristaExtraction: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=1974&auto=format&fit=crop',
+  baristaExtraction: barist002Image,
   foundersMain: 'https://images.unsplash.com/photo-1521017432531-fbd92d768814?q=80&w=2070&auto=format&fit=crop',
   foundersLucas: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop',
   foundersGabriel: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1974&auto=format&fit=crop',
-  espressoMachine: 'https://images.unsplash.com/photo-1511920170033-f8396924c348?q=80&w=1974&auto=format&fit=crop',
+  espressoMachine: barist001Image,
   latteArt: 'https://images.unsplash.com/photo-1534778101976-62847782c213?q=80&w=1974&auto=format&fit=crop',
   coldBrew: 'https://images.unsplash.com/photo-1517701604599-bb29b565090c?q=80&w=1974&auto=format&fit=crop',
   pourover: 'https://images.unsplash.com/photo-1498804103079-a6351b050096?q=80&w=1974&auto=format&fit=crop',
@@ -54,8 +59,8 @@ export const HERO_VIDEO_OPTIONS = [
 export const SPECIALTY_DRINKS: Drink[] = [
   {
     id: 'espresso-doppio',
-    name: 'Espresso Doppio Signature',
-    subtitle: 'Extratora La Marzocco / Cimbali • 9 Bar',
+    name: 'Espresso Doppio ',
+    subtitle: 'Máquina de alta precisão • 9 Bar',
     category: 'espresso',
     categoryLabel: 'Espresso & Clássicos',
     description: 'A essência pura do café especial. Dupla extração artesanal com crema densa e aveludada, revelando acidez cítrica brilhante e notas de chocolate amargo.',
@@ -66,7 +71,7 @@ export const SPECIALTY_DRINKS: Drink[] = [
     image: 'https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?q=80&w=800&auto=format&fit=crop',
     sensory: {
       aroma: ['Caramelo Queimado', 'Nozes Torradas', 'Cacau Intenso'],
-      notes: ['Chocolate Amargo', 'Laranja Bahia', 'Mel de Melato'],
+      notes: ['Chocolate Amargo', 'Caramelo', ],
       acidity: 'Média-Alta',
       body: 'Aveludado',
       sweetness: 'Caramelizada'
@@ -75,7 +80,7 @@ export const SPECIALTY_DRINKS: Drink[] = [
   },
   {
     id: 'macchiato-velvet',
-    name: 'Macchiato Velvet',
+    name: 'Macchiato Classic',
     subtitle: 'Espresso Ristretto + Microespuma de Leite',
     category: 'espresso',
     categoryLabel: 'Espresso & Clássicos',
@@ -96,8 +101,8 @@ export const SPECIALTY_DRINKS: Drink[] = [
   },
   {
     id: 'cappuccino-artisan',
-    name: 'Cappuccino Cremoso com Arte Latte',
-    subtitle: 'Proporção Áurea 1:1:1 • Arte Latte Customizada',
+    name: 'Cappuccino Italiano Clássico',
+    subtitle: 'Espresso Duplo + Leite Vaporizado + Espuma Densa',
     category: 'cappuccino',
     categoryLabel: 'Cappuccinos & Cremosos',
     description: 'Proporção perfeita entre espresso duplo, leite vaporizado e espuma densa. Finalizado com arte latte personalizada com a marca ou inicial do evento.',
@@ -105,7 +110,28 @@ export const SPECIALTY_DRINKS: Drink[] = [
     extractionMethod: 'Espresso + Leite Aveludado a Vapor',
     temperature: 'Quente',
     prepTime: '2.5 min',
-    image: 'https://images.unsplash.com/photo-1534778101976-62847782c213?q=80&w=800&auto=format&fit=crop',
+    image: capuccinoImage,
+    sensory: {
+      aroma: ['Canela em Pau', 'Cacau em Pó 70%'],
+      notes: ['Avelã Tostada', 'Creme de Leite', 'Caramelo'],
+      acidity: 'Baixa',
+      body: 'Cremoso',
+      sweetness: 'Natural Alto'
+    },
+    highlights: ['Latte Art exclusiva em cada xícara', 'Possibilidade de logo stencil com cacau', 'Toque de especiarias brasileiras']
+  },
+  {
+    id: 'cappuccino-cremoso',
+    name: 'Cappuccino Cremoso Especial',
+    subtitle: 'Mistura de Cappuccino + Leite + Toque de Cacau. Já adoçado!',
+    category: 'cappuccino',
+    categoryLabel: 'Cappuccinos & Cremosos',
+    description: 'Proporção perfeita de pó de capuccino, leite vaporizado. ',
+    beanOrigin: 'Sul de Minas - Mantiqueira de Minas (87 pontos)',
+    extractionMethod: 'Espresso + Leite Aveludado a Vapor',
+    temperature: 'Quente',
+    prepTime: '2.5 min',
+    image: 'https://images.unsplash.com/photo-1621135177072-57c9b6242e7a?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     sensory: {
       aroma: ['Canela em Pau', 'Cacau em Pó 70%'],
       notes: ['Avelã Tostada', 'Creme de Leite', 'Caramelo'],
@@ -117,16 +143,16 @@ export const SPECIALTY_DRINKS: Drink[] = [
   },
   {
     id: 'v60-origami-single',
-    name: 'Filtrado V60 / Origami Single Origin',
-    subtitle: 'Método Geométrico Japonês • Fluxo Contínuo',
+    name: 'Filtrado V60 / Chemex / Melitta',
+    subtitle: 'Métodos de filtragem',
     category: 'filtrados',
     categoryLabel: 'Filtrados Artesanais',
-    description: 'Massa limpa e complexa. O método V60 realça as nuances de acidez floral e frutada dos grãos de altitude, servido em jarras de vidro soprado.',
+    description: 'O método V60 realça as nuances de acidez floral e frutada dos grãos de altitude, servido em jarras de vidro soprado.',
     beanOrigin: 'Chapada Diamantina, Bahia - Altitude 1.300m',
     extractionMethod: 'Filtro de Papel Cônico Origami • Bico de Cisne',
     temperature: 'Quente',
     prepTime: '3.5 min',
-    image: 'https://images.unsplash.com/photo-1498804103079-a6351b050096?q=80&w=800&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1544421604-029b2ff95af1?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     sensory: {
       aroma: ['Jasmin', 'Pêssego Maduro', 'Flores Brancas'],
       notes: ['Mel de Flor de Laranjeira', 'Damasco', 'Chá Preto'],
@@ -147,7 +173,7 @@ export const SPECIALTY_DRINKS: Drink[] = [
     extractionMethod: 'Chemex 6 Xícaras • Água Mineral 91°C',
     temperature: 'Quente',
     prepTime: '4 min',
-    image: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=800&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1522737799611-b1119d527dc4?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     sensory: {
       aroma: ['Cereja Ensuada', 'Cardamomo'],
       notes: ['Aromas Cítricos', 'Uva Verde', 'Açúcar Mascavo'],
@@ -159,7 +185,7 @@ export const SPECIALTY_DRINKS: Drink[] = [
   },
   {
     id: 'cold-brew-citrus',
-    name: 'Cold Brew Autoral Citrus & Tonic',
+    name: 'Cafes Gelados & Drinks Autorais',
     subtitle: 'Infusão a Frio 18 horas + Tônica Artesanal & Alecrim',
     category: 'drinks_autorais',
     categoryLabel: 'Drinks Autorais Gelados',
@@ -168,7 +194,7 @@ export const SPECIALTY_DRINKS: Drink[] = [
     extractionMethod: 'Slow Immersion 18h • Servido em Copo Lowball',
     temperature: 'Gelado',
     prepTime: '2 min',
-    image: 'https://images.unsplash.com/photo-1517701604599-bb29b565090c?q=80&w=800&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1637178035222-a08f2d4dd1a3?q=80&w=678&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     sensory: {
       aroma: ['Alecrim Maçaricado', 'Zeste de Laranja'],
       notes: ['Frutas Amarelas', 'Tônica Botânica', 'Sensação Refrescante'],
@@ -180,7 +206,7 @@ export const SPECIALTY_DRINKS: Drink[] = [
   },
   {
     id: 'espresso-tonic-gold',
-    name: 'Espresso Tonic Gold Leaf',
+    name: 'Espresso Tônica',
     subtitle: 'Espresso Duplo + Tônica Premium + Xarope de Laranja',
     category: 'drinks_autorais',
     categoryLabel: 'Drinks Autorais Gelados',
@@ -198,28 +224,8 @@ export const SPECIALTY_DRINKS: Drink[] = [
       sweetness: 'Caramelizada'
     },
     highlights: ['Efeito bifásico deslumbrante', 'Energético natural de alto padrão', 'Muito solicitado em eventos corporativos tech']
-  },
-  {
-    id: 'affogato-madagascar',
-    name: 'Affogato de Baunilha de Madagáscar',
-    subtitle: 'Gelato Artesanal Fior di Latte + Espresso Pelando',
-    category: 'drinks_autorais',
-    categoryLabel: 'Drinks Autorais Gelados',
-    description: 'A sobremesa perfeita em forma de bebida. Uma bola de gelato artesanal de baunilha pura afogada por um espresso duplo bem quente recém extraído.',
-    beanOrigin: 'Alta Mogiana - Torra Média Escura',
-    extractionMethod: 'Gelato em Taça de Cristal + Pour Over de Espresso',
-    temperature: 'Ambiente',
-    prepTime: '2 min',
-    image: 'https://images.unsplash.com/photo-1592321675774-3de57f36f407?q=80&w=800&auto=format&fit=crop',
-    sensory: {
-      aroma: ['Baunilha em Fava', 'Cacau Venezuelano'],
-      notes: ['Sorvete Cremoso', 'Espresso Amargo', 'Crocante de Amêndoas'],
-      acidity: 'Baixa',
-      body: 'Veludoso e Denso',
-      sweetness: 'Natural Alto'
-    },
-    highlights: ['Contraste térmico quente x frio', 'Servido em taça de cristal', 'Sucesso absoluto em casamentos e jantares de gala']
   }
+  
 ];
 
 export const EVENT_CATEGORIES: EventCategory[] = [

@@ -74,11 +74,11 @@ export const GallerySection: React.FC = () => {
           </div>
 
           <h2 className="font-serif-display text-3xl sm:text-5xl font-light text-[#2c1d11] leading-tight mb-4">
-            Galeria Elegante de <span className="italic font-normal gold-gradient-text">Nossos Trabalhos</span>
+            <span className="italic font-normal gold-gradient-text">Nossos Trabalhos</span>
           </h2>
 
           <p className="font-sans-body text-sm sm:text-base text-[#5c4a3a] font-normal leading-relaxed">
-            Navegue pelos cases mais marcantes produzidos pela nossa equipe em feiras internacionais, convenções globais e celebrações VIP.
+            Navegue pelos cases mais marcantes produzidos pela nossa equipe em feiras e congressos
           </p>
         </div>
 

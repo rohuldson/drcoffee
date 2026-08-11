@@ -50,10 +50,13 @@ export default function App() {
       {/* Founders Section (Two Friends United by Coffee) */}
       <FoundersSection />
 
-      {/* Event Formats & Capacity */}
+      {/* Event Formats & Capacity
       <EventTypesSection
         onOpenQuoteModalWithCategory={(category) => handleOpenQuoteModal(category)}
       />
+      
+      */}
+      
 
       {/* Elegant Gallery with Advanced Category Filtering & Case Lightbox */}
       <GallerySection />

@@ -38,7 +38,7 @@ export const SensoryMenuSection: React.FC = () => {
           </h2>
 
           <p className="font-sans-body text-sm sm:text-base text-[#5c4a3a] font-normal leading-relaxed">
-            Nossas bebidas utilizam grãos 100% Arábica de alta altitude com pontuação acima de 86 pontos BSCA, moídos no momento do preparo para revelar um buquê aromático inesquecível.
+            Nossas bebidas utilizam grãos 100% Arábica de alta altitude com pontuação acima de 86 pontos, buscamos sempre a mais alta qualidade em cada extração.
           </p>
         </div>
 

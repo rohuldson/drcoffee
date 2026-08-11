@@ -51,8 +51,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenQuoteModal }) => {
 
         {/* Subtitle */}
         <p className="font-sans-body text-base sm:text-xl text-[#e3d7c7] max-w-2xl font-light leading-relaxed mb-10">
-          Transformamos cafés especiais em experiências inesquecíveis para empresas, feiras e eventos corporativos com métodos artesanais de extração.
-        </p>
+          Transformamos o café em momentos inesquecíveis que geram conexão, criando experiências únicas entre sua marca e seus clientes.</p>
 
         {/* CTA Button Group */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto mb-12">
